@@ -1,0 +1,29 @@
+version: "3"
+services:
+  innodb_ruby:
+    build: "./innodb_ruby"
+    volumes:
+      - "./mysql/data:/work"
+    container_name: "innodb_ruby"
+    networks:
+      - "backend"
+
+  mysql:
+    image: "mysql:5.7"
+    hostname: "mysql"
+    environment:
+      MYSQL_ROOT_PASSWORD: "happyday"
+    volumes:
+      - "./mysql/data:/var/lib/mysql"
+      - "./mysql/my.cnf:/etc/my.cnf"
+    ports:
+      - "3307:3306"
+    networks:
+      - "backend"
+    restart: "always"
+    container_name: "mysql"
+
+networks:
+  "backend":
+
+  
