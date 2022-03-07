@@ -18,3 +18,15 @@ Various parts of this library and the tools included may have wildly differing m
 
 * The [innodb_ruby wiki](https://github.com/jeremycole/innodb_ruby/wiki) contains some additional references and documentation to help you get started.
 * See the [RubyGems page for innodb_ruby](http://rubygems.org/gems/innodb_ruby) &mdash; Gem packaged releases are published regularly to RubyGems.org, which also provides online documentation.
+
+# docker
+
+```
+cd middleware-compose
+docker-compose up -d
+
+docker ps 
+
+docker exec -it xxxx /bin/sh
+
+```
