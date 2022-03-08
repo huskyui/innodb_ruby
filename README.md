@@ -20,6 +20,7 @@ Various parts of this library and the tools included may have wildly differing m
 * See the [RubyGems page for innodb_ruby](http://rubygems.org/gems/innodb_ruby) &mdash; Gem packaged releases are published regularly to RubyGems.org, which also provides online documentation.
 
 # docker
+* require `docker version` greater than `20.10.6`
 
 ```
 cd middleware-compose
